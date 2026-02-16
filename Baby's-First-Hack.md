@@ -157,7 +157,7 @@ Following the above steps I was able to determine all four target passwords:
 - spaceman
 - funforyou
 
-## Quick Hashcat Reference
+## References
 
 | Hash Type     | Prefix   | hashcat Mode | Example Command (dictionary)                          |
 |---------------|----------|--------------|-------------------------------------------------------|
