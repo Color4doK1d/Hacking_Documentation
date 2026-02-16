@@ -161,9 +161,9 @@ Following the above steps I was able to determine all four target passwords:
 
 | Hash Type     | Prefix   | hashcat Mode | Example Command                                       |
 |---------------|----------|--------------|-------------------------------------------------------|
-| bcrypt        | \$2a\$     | 3200         | hashcat -m 3200 hash.txt rockyou.txt                  |
+| bcrypt        | `$2a$`     | 3200         | hashcat -m 3200 hash.txt rockyou.txt                  |
 | SHA-256 (raw) | (none)   | 1400         | hashcat -m 1400 hash.txt rockyou.txt                  |
-| sha512crypt   | \$6\$      | 1800         | hashcat -m 1800 hash.txt rockyou.txt                  |
+| sha512crypt   | `$6$`      | 1800         | hashcat -m 1800 hash.txt rockyou.txt                  |
 
 ## Summary
 
