@@ -90,3 +90,61 @@ Armed with the target directory, my word list and the Hash Mode ID, I can execut
 hashcat -m 1400 -a 0 ~/Hashing-Basics/Task-6/hash2.txt rockyou.txt
 ```
 
+A successful crack returns the password: *halloween* (Which, incidentally, is my favourite holiday!)
+
+### Third Password
+
+1. **Summarising First Two Steps**
+
+As detailed in the first two password cracks, armed with the target directory I can easily pull the hash from the file it is stored in.
+
+```bash
+cat ~/Hashing-Basics/Task-6/hash3.txt
+```
+
+This command returns the hash I am looking to crack: *$6$GQXVvW4EuM$ehD6jWiMsfNorxy5SINsgdlxmAEl3.yif0/c3NqzGLa0P.S7KRDYjycw5bnYkF5ZtB8wQy8KnskuWQS3Yr1wQ0*
+
+2. **Determine Hash Type**
+
+When a cursory visual scan of the Hashcat depository won't do, I run a simply page search for the "$6" prefix of the hash I've recovered.
+
+<img width="1337" height="516" alt="image" src="https://github.com/user-attachments/assets/04d8f43f-a00e-4900-b0ce-422a4bd06f61" />
+
+(Ignore my bookmarks bar!)
+
+This is mostly an educated guess, but I can already be confident that I've located the correct hash type, as SHA matches the target system (Linux)
+
+3. **Execute Password Crack**
+
+Once again, I am now armed with all I need to attempt a crack.
+
+```bash
+hashcat -m 1800 -a 0 ~/Hashing-Basics/Task-6/hash3.txt rockyou.txt
+```
+
+Once this crack is successful, it returns the password: *spaceman*
+
+### Fourth Password
+
+1. **Summarising First Two Steps**
+
+A more complete summary of this process is detailed under the First and Second Passwords I cracked. The process is exactly the same here, only I am pulling from the file 'hash4.txt'.
+
+The search returns the target hash with a value of: *b6b0d451bbf6fed658659a9e7e5598fe*
+
+2. **Hash Type**
+
+This challenge is designed on the assumption that the hash type cannot or cannot be easily determined simply by searching through example tables. It therefore encourages the student to acquire the password by means other than a cracking attempt.
+
+3. **Using Hashes.com**
+
+Therefore, I copy/paste the hash I received into hashes.com, for it to run through its own internal Rainbow Tables to find a match:
+
+<img width="1600" height="683" alt="image" src="https://github.com/user-attachments/assets/6e2be62c-b167-4fe1-9258-909e3affc89c" />
+
+4. **Successful Search**
+
+<img width="1590" height="352" alt="image" src="https://github.com/user-attachments/assets/f75fa086-0875-438d-b975-48213f2dd3ef" />
+
+Hashes.com does indeed have the target hash on file, and it returns with the password: *funforyou*
+
