@@ -45,4 +45,15 @@ I will be using the rockyou.txt password leak as my wordlist for the attack.
 user@ip-10-80-175-45:~$ hashcat -m 3200 -a 0 ~/Hashing-Basics/Task-6/hash1.txt rockyou.txt
 ```
 
-Test Text
+<img width="937" height="479" alt="image" src="https://github.com/user-attachments/assets/55004d2d-670e-4606-aab2-4bcdfd38162e" />
+
+(Screenshot of the crack process in progress. I am sharing just to demonstrate the view from the Terminal; I will not paste screenshots from the subsequent cracking attempts).
+
+<img width="460" height="164" alt="image" src="https://github.com/user-attachments/assets/221e8774-ac32-4ebf-857a-ee9e25b9458b" />
+
+<img width="804" height="477" alt="image" src="https://github.com/user-attachments/assets/12c87bf7-d400-4598-8635-f1c16d5d7cd6" />
+
+(This screenshot details the successful result of the crack)
+
+With the hashcat command having executed successfully, I now know the hashed password: *85208520*
+
