@@ -23,7 +23,7 @@ The target password hash is stored in file location ~/Hashing-Basics/Task-6/hash
 2. **Acquire Hash**
    
 ```bash
-user@ip-10-80-175-45:~$ cat ~/Hashing-Basics/Task-6/hash1.txt
+cat ~/Hashing-Basics/Task-6/hash1.txt
 ```
 
 With the target directory known, the hash can be retrieved for review.
@@ -43,7 +43,7 @@ Having identified the hash type as bcrypt, I now have the Hash-Mode ID that I ca
 I will be using the rockyou.txt password leak as my wordlist for the attack.
 
 ```bash
-user@ip-10-80-175-45:~$ hashcat -m 3200 -a 0 ~/Hashing-Basics/Task-6/hash1.txt rockyou.txt
+hashcat -m 3200 -a 0 ~/Hashing-Basics/Task-6/hash1.txt rockyou.txt
 ```
 
 <img width="937" height="479" alt="image" src="https://github.com/user-attachments/assets/55004d2d-670e-4606-aab2-4bcdfd38162e" />
@@ -58,7 +58,7 @@ user@ip-10-80-175-45:~$ hashcat -m 3200 -a 0 ~/Hashing-Basics/Task-6/hash1.txt r
 
 With the hashcat command having executed successfully, I now know the hashed password: *85208520*
 
-###Second Password
+### Second Password
 
 1. **File Location**
 
@@ -67,8 +67,26 @@ The second target password hash is located in the directory ~/Hashing-Basics/Tas
 2. **Aquire Hash**
 
 ```bash
-user@ip-10-80-175-45:~$ cat ~/Hashing-Basics/Task-6/hash2.txt
+cat ~/Hashing-Basics/Task-6/hash2.txt
 ```
 
 I run the same command to procure the hash from the target directory. **N.B.** I will skip these two steps on the subsequent two cracks, as they are identical each time, with the only difference between them being the name of the target file: 'hash1.txt'; 'hash2.txt'; etc.
+
+In this instance, the hash I discover reads: *9eb7ee7f551d2f0ac684981bd1f1e2fa4a37590199636753efe614d4db30e8e1*
+
+3. **Determine Hash Type**
+
+In this particular example, the Hash Type has already been supplied to me - SHA2-256.
+
+<img width="1224" height="167" alt="image" src="https://github.com/user-attachments/assets/d647ca1c-7e33-4807-96e5-63c5962974d9" />
+
+I can therefore refer to the Hashcat depository to determine the Hash Mode ID for SHA2-256, which is 1400, as shown in the above screenshot.
+
+4. **Execute Password Crack**
+
+Armed with the target directory, my word list and the Hash Mode ID, I can execute the crack just the same as before.
+
+```bash
+hashcat -m 1400 -a 0 ~/Hashing-Basics/Task-6/hash2.txt rockyou.txt
+```
 
