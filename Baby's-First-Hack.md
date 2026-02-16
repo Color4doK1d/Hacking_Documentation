@@ -148,3 +148,35 @@ Therefore, I copy/paste the hash I received into hashes.com, for it to run throu
 
 Hashes.com does indeed have the target hash on file, and it returns with the password: *funforyou*
 
+## Result
+
+Following the above steps I was able to determine all four target passwords:
+
+- 85208520
+- Halloween
+- spaceman
+- funforyou
+
+## Quick Hashcat Reference
+
+| Hash Type     | Prefix   | hashcat Mode | Example Command (dictionary)                          |
+|---------------|----------|--------------|-------------------------------------------------------|
+| bcrypt        | $2a$     | 3200         | hashcat -m 3200 hash.txt rockyou.txt                  |
+| SHA-256 (raw) | (none)   | 1400         | hashcat -m 1400 hash.txt rockyou.txt                  |
+| sha512crypt   | $6$      | 1800         | hashcat -m 1800 hash.txt rockyou.txt                  |
+
+## Summary
+
+This is not a real TryHackMe Challenge Room; I am simply documenting a guided password cracking exercise from a learning room *(Cybersecurity 101 -> Cryptography -> Hashing Basics -> Task 6)*. This is both as a way to document and record my first "hack", and also an excuse to set up my GitHub profile and get used to using GitHub to document future CTFs, Challenge Rooms, etc. As a result of this process I have:
+
+- Gotten comfortable with the hashcat command and its arguments;
+- Solidifed my knowledge of hashing;
+- Became more familiar with common hashing types such as bcrypt and SHA variants;
+- Set-up a GitHub account
+- Practiced documentation write-ups on GitHub
+
+## Final Thoughts
+
+The one-two punch of executing my first, albeit trivial, hack and taking the time to document it thoroughly has massively boomed my confidence. My plan is to continue on this track, building up a portfolio of documentation that I can both refer back to myself and display as proof of my achievements in this space.
+
+Looking forwards to the next one.
