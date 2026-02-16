@@ -7,7 +7,7 @@ Linux basics → Hashing → First cracks → Easy machines like Crack the Hash,
 
 ## Completed Rooms / Writeups
 
-- Baby's First Hack - Password Cracking with TryHackMe (firsthack.md) | Completed: *2026-02-16*
+- [Baby's First Hack - Password Cracking with TryHackMe](firsthack.md) | Completed: *2026-02-16*
 - Etc
 - Etc
 
