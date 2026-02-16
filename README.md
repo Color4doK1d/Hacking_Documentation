@@ -7,7 +7,7 @@ Linux basics → Hashing → First cracks → Easy machines like Crack the Hash,
 
 ## Completed Rooms / Writeups
 
-- Etc
+- Baby's First Hack - Password Cracking with TryHackMe (Baby's-First-Hack.md) | Completed: *2026-02-16*
 - Etc
 - Etc
 
@@ -15,6 +15,6 @@ Linux basics → Hashing → First cracks → Easy machines like Crack the Hash,
 - 
 
 Last updated: February 16, 2026  
-Started [when I complete XYZ course on THM etc etc]
+Started [when I completed XYZ course on THM etc etc]
 
 Feel free to learn from my notes — but solve rooms yourself first! 🏴‍☠️
