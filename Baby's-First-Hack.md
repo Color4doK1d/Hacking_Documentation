@@ -8,6 +8,7 @@
 Crack four passwords whose hashes' storage directories are known and accessible to the user.
 
 ## Tools Employed
+- Linux Terminal
 - Hashcat
 - RockYou.txt
 - Hashes.com
@@ -19,7 +20,7 @@ Crack four passwords whose hashes' storage directories are known and accessible 
    
 The target password hash is stored in file location ~/Hashing-Basics/Task-6/hash1.txt
 
-3. **Acquire Hash**
+2. **Acquire Hash**
    
 ```bash
 user@ip-10-80-175-45:~$ cat ~/Hashing-Basics/Task-6/hash1.txt
@@ -56,4 +57,18 @@ user@ip-10-80-175-45:~$ hashcat -m 3200 -a 0 ~/Hashing-Basics/Task-6/hash1.txt r
 (This screenshot details the successful result of the crack)
 
 With the hashcat command having executed successfully, I now know the hashed password: *85208520*
+
+###Second Password
+
+1. **File Location**
+
+The second target password hash is located in the directory ~/Hashing-Basics/Task-6/hash2.txt
+
+2. **Aquire Hash**
+
+```bash
+user@ip-10-80-175-45:~$ cat ~/Hashing-Basics/Task-6/hash2.txt
+```
+
+I run the same command to procure the hash from the target directory. **N.B.** I will skip these two steps on the subsequent two cracks, as they are identical each time, with the only difference between them being the name of the target file: 'hash1.txt'; 'hash2.txt'; etc.
 
