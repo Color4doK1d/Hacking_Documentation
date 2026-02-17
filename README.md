@@ -1,8 +1,8 @@
-# Hacking Lab Write-Ups & Documentation
+# Colorado Kid's Hacking Lab Documentation & Write-Ups
 
-Documenting my first steps into the cybersecurity sector.
+*Documenting my first steps into the cybersecurity sector through TryHackMe Labs, CTF Challenges & Puzzle Rooms*
 
-**Goal**: Document a comprehensive record of my trials, tribulations, and triumphs, come what may. Both for my own reference and to serve as a portfolio.
+**Goal**: Document a comprehensive record of my trials, tribulations, and triumphs, come what may. Both to serve as my own reference library and as a cybersecurity portfolio.
 
 ## Completed Rooms / Writeups
 
