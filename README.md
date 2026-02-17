@@ -2,9 +2,30 @@
 
 *Documenting my first steps into the cybersecurity sector through TryHackMe Labs, CTF Challenges & Puzzle Rooms*
 
+```
+                                                          ___
+                                                       __|___|__
+                                                        ('o_o')
+                                                        _\~-~/_    ______.
+                                                       //\__/\ \ ~(_]---'
+                                                      / )O  O( .\/_)
+                                                      \ \    / \_/
+                                                      )/_|  |_\
+                                                     // /(\/)\ \
+                                                     /_/      \_\
+                                                    (_||      ||_)
+                                                      \| |__| |/
+                                                       | |  | |
+                                                       | |  | |
+                                                       |_|  |_|
+                                                       /_\  /_\
+```
+
 **Goal**: Document a comprehensive record of my trials, tribulations, and triumphs, come what may. Both to serve as my own reference library and as a cybersecurity portfolio.
 
 I develop these write-ups with myself in mind. Not only do I write them to be as comprehensive as possible for use as reference materials by myself later, but I write them to provide the highest possible level of clarity so that a brand new student of cybersecurity could follow along clearly and gain the most out of them. For this reason, I hope that they might serve as walkthroughs for people seeking assistance with the Challenge Rooms that I undertake to complete and document.
+
+
 
 ## ⚠️Disclaimer⚠️
 
