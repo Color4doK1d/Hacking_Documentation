@@ -29,7 +29,7 @@ I develop these write-ups with myself in mind. Not only do I write them to be as
 
 ## ⚠️Disclaimer⚠️
 
-*These walkthroughs exist as a personal reference library, and are for **educational purposes only**. Each write-up includes a link to the specific challenge room whose hack is being document. I cannot be held responsible for use of the concepts and tools documented herein for unauthorised operations outside the scope of their respective challenge room. These walkthroughs are not intended for use with unauthorised systems.*
+*These walkthroughs exist as a personal reference library, and are for **educational purposes only**. Each write-up includes a link to the specific challenge room whose hack is being documented. These walkthroughs are not intended for use with unauthorised systems outside the scope of those rooms. I cannot be held responsible for the misuse of the concepts of tools documented herein for purposes other than the specific challenge rooms indicated in each write-up.*
 
 **SPOILERS AHEAD - Please Read On Responsibly!**
 
