@@ -22,6 +22,10 @@ Our target is FakeBank, which runs a browser service for account holders. By typ
 
 In order to probe for hidden pages, we run a dirb attack against FakeBank's url.
 
+```bash
+dirb http://fakebank.thm
+```
+
 <img width="763" height="598" alt="image" src="https://github.com/user-attachments/assets/03c64f57-0e70-4d87-8e37-8f9df9819c74" />
 
 Our scan reveals two hidden pages at the target URL: "images" and "bank-transfer".
@@ -40,3 +44,18 @@ Just like that, we have access a hidden page that was improperly secured by Fake
 
 ### Transfer Funds
 
+Now we can transfer money to any account we elect. Let's wipe out our overdraft, and give us a little something extra for our troubles.
+
+<img width="940" height="451" alt="image" src="https://github.com/user-attachments/assets/c457b8e9-56c6-4579-8d6a-df67f33a7b16" />
+
+Now we simply execute the transfer, and we are mission accomplished.
+
+## Result
+
+$2,000 successfully transferred from FakeBank to Account Number 8881
+
+## Summary
+
+This barely constitutes a hack, certainly not one worth documenting, but I decided to do so simply as an excuse to continue honing my familiarity with GitHub as well as my own personal documentation process. I feel like I have a bit of refinement still to etch out. Ideally I would want these documents to be so thorough that anybody could emulate the steps I took.
+
+I wrote this quickly, and leaned on my screenshots to do some of the talking for me. I believe that while this is functional, in future my written documentation should be erven more granular and break down every action in text form, using screenshots simply as a visual aid, not a guide.
