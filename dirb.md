@@ -40,7 +40,7 @@ Like so.
 
 <img width="940" height="406" alt="image" src="https://github.com/user-attachments/assets/4e932363-4bb6-4c30-9730-c33489c419d6" />
 
-Just like that, we have access a hidden page that was improperly secured by FakeBank.
+Just like that, we have access to a hidden page that was improperly secured by FakeBank.
 
 ### Transfer Funds
 
