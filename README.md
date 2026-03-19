@@ -50,7 +50,7 @@
 
 | No. | Write-Up | Completed On |
 |---|---|---|
-|1|[Baby's First Hack - Password Cracking with TryHackMe](firsthack.md)|2026-02-16|
+|1|[Baby's First Hack - Password Cracking with TryHackMe](firsthack.md)|*2026-02-16*|
 |2|[A Really Simple Example of dirb in Action](dirb.md)|*2026-03-19*|
 
 Last updated: March 19th, 2026
