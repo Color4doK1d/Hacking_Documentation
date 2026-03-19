@@ -34,7 +34,7 @@
 
 ## Personal Learning Objectives
 
-| Number | Certification / Activity | Status |
+| No. | Certification / Activity | Status |
 |---|---|---|
 |1|TryHackMe SEC0 Certification|In Progress!|
 |2|TryHackMe SEC1 Certification|Not Started|
@@ -48,11 +48,9 @@
 
 **SPOILERS FOR TRYHACKME AHEAD - Please Read On Responsibly!**
 
-- [Baby's First Hack - Password Cracking with TryHackMe](firsthack.md) | Completed: *2026-02-16*
-- [A Really Simple Example of dirb in Action](dirb.md) | Completed: *2026-03-19*
-- Etc
+| No. | Write-Up | Completed On |
+|---|---|---|
+|1|[Baby's First Hack - Password Cracking with TryHackMe](firsthack.md)|2026-02-16|
+|2|[A Really Simple Example of dirb in Action](dirb.md)|*2026-03-19*|
 
-
-
-
-Last updated: February 16, 2026  
+Last updated: March 19th, 2026
