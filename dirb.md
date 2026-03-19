@@ -20,7 +20,7 @@ Our target is FakeBank, which runs a browser service for account holders. By typ
 
 ### Find Hidden Pages on fakebank.thm
 
-In order to probe for hidden pages, we run a dirb attack against FakeBank's url.
+In order to probe for hidden pages, we run a dirb attack against FakeBank's url. We input the following command into Windows' CLI:
 
 ```bash
 dirb http://fakebank.thm
@@ -59,3 +59,9 @@ $2,000 successfully transferred from FakeBank to Account Number 8881
 This barely constitutes a hack, certainly not one worth documenting, but I decided to do so simply as an excuse to continue honing my familiarity with GitHub as well as my own personal documentation process. I feel like I have a bit of refinement still to etch out. Ideally I would want these documents to be so thorough that anybody could emulate the steps I took.
 
 I wrote this quickly, and leaned on my screenshots to do some of the talking for me. I believe that while this is functional, in future my written documentation should be erven more granular and break down every action in text form, using screenshots simply as a visual aid, not a guide.
+
+Conscious of this, I have since gone back to add in a little more detail early on, including providing the exact command line used by me in this attack. Otherwise, I will leave this guide unchanged, and take care to be more thorough in future.
+
+## Final Thoughts
+
+This is really an exercise in my familiarity with GitHub first and foremost, and my etiquette in devising these documentations. From that, it was a good exericse. The hack itself is almost certainly never to work quite this way against any real major target, let alone a financial institution. Nonetheles, it's a fun backdrop to explore the functionality of dirb in very simple terms and served as a great excuse to write another document.
