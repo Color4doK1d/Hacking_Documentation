@@ -49,7 +49,7 @@
 **SPOILERS FOR TRYHACKME AHEAD - Please Read On Responsibly!**
 
 - [Baby's First Hack - Password Cracking with TryHackMe](firsthack.md) | Completed: *2026-02-16*
-- [A Really Simple Example of dirb in Action](dirb.md) | Completed: *2026-02-16*
+- [A Really Simple Example of dirb in Action](dirb.md) | Completed: *2026-03-19*
 - Etc
 
 
