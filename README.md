@@ -36,7 +36,7 @@
 ## Completed Rooms / Writeups
 
 - [Baby's First Hack - Password Cracking with TryHackMe](firsthack.md) | Completed: *2026-02-16*
-- Etc
+- [A Really Simple Example of dirb in Action](dirb.md) | Completed: *2026-02-16*
 - Etc
 
 
