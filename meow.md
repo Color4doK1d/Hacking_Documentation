@@ -16,8 +16,8 @@ Penetrate the target system and capture the flag.
 
 - Ran an nmap scan against target IP addres
 
-> ![Nmap Scan]<img width="1375" height="311" alt="NmapCapture" src="https://github.com/user-attachments/assets/35678888-032d-4ffd-9769-eea71c53860d" />
-> *Figure 1: Nmap Scan Output*
+> <img width="1375" height="311" alt="NmapCapture" src="https://github.com/user-attachments/assets/35678888-032d-4ffd-9769-eea71c53860d" />
+> <em>Figure 1: Nmap Scan Output</em>
 
 - Identified Port 23 (Telnet) as open
 
@@ -31,11 +31,13 @@ Penetrate the target system and capture the flag.
 
 - root granted immediate root access to target machine, allowing unfettered access
 
-[IMAGE]
+> <img width="849" height="928" alt="Telnet" src="https://github.com/user-attachments/assets/89b5db30-bb4f-4603-90a0-ff6e84bdc2c3" />
+> <em>Figure 2: Gained access to target machine through Port 23 (Telnet) with root privileges
 
 ## Flags
 
-[IMAGE]
+> <img width="675" height="134" alt="Flag" src="https://github.com/user-attachments/assets/8dec75fd-2627-495d-ad41-cb8937e44842" />
+> Figure 3: First Flag Captured!
 
 ## Summary
 
