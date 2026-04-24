@@ -19,11 +19,11 @@ Capture the flag on the target machine
 > <img width="1303" height="300" alt="nmap" src="https://github.com/user-attachments/assets/38078209-6ad2-49f9-8821-5e2fe794d2b9" />
 > <em>Figure 1: Nmap Scan Output</em>
 
-- Detected the Port 21 (File Transfer Protocol) was open. FTP allows for anonymous access, which combined with poor network configuration could reveal a catastrophic vulnerability.
+- Detected that Port 21 (File Transfer Protocol) was open. FTP allows for anonymous access, which combined with poor network configuration could reveal a catastrophic vulnerability.
 
 ### Exploit
 
-- With this in mind, I attempted to the target machine's FTP service using "anonymous" as my username. Sure enough, it granted me access without requiring a password.
+- With this in mind, I attempted connection to the target machine's FTP service using "anonymous" as my username. Sure enough, it granted me access without requiring a password.
 
 - The target flag was easily available once a connection was established; this represents less a vulnerability and more simply "Connect to a public access point and download a public file". As this was enough to satisfy my objective, I had no cause to pursue privilege escalation on the target.
 
