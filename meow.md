@@ -14,30 +14,32 @@ Penetrate the target system and capture the flag.
 ## Walkthrough
 ### Reconnaissance & Enumeration
 
-- Ran an nmap scan against target IP addres
+- Ran an nmap scan against target IP address
 
 > <img width="1375" height="311" alt="NmapCapture" src="https://github.com/user-attachments/assets/35678888-032d-4ffd-9769-eea71c53860d" />
 > <em>Figure 1: Nmap Scan Output</em>
 
-- Identified Port 23 (Telnet) as open
+- Identified Port 23 (Telnet) as open. This is more or less expected, given that this is the easiest hack that HacktheBox has to offer. While it's the only open port on this target machine, it stands out anyway for being notoriously vulnerable if poorly configured, especially as it is an older service. This makes it a high-priority target for probing.
 
 ### Exploit
 
 - Connected to Port 23 on target machine with telnet command
 
-- User credentials were requested; attempted to login using username "root"
+- User credentials were requested; attempted several obvious username/password combinations before I took a step back and reconsidered.
+
+- Used "root" login and was granted immediate root access without any follow-up prompt for a password.
 
 ### Privilege Escalation
 
-- root granted immediate root access to target machine, allowing unfettered access
+- root granted immediate root access to target machine, allowing unfettered access. While it's intentional in this case, this does showcase extraordinarily poor configuration on the part of the target machine. Good news for us.
 
 > <img width="849" height="928" alt="Telnet" src="https://github.com/user-attachments/assets/89b5db30-bb4f-4603-90a0-ff6e84bdc2c3" />
-> <em>Figure 2: Gained access to target machine through Port 23 (Telnet) with root privileges
+> <em>Figure 2: Gained access to target machine through Port 23 (Telnet) with root privileges</em>
 
 ## Flags
 
 > <img width="675" height="134" alt="Flag" src="https://github.com/user-attachments/assets/8dec75fd-2627-495d-ad41-cb8937e44842" />
-> Figure 3: First Flag Captured!
+> <em>Figure 3: First Flag Captured!</em>
 
 ## Summary
 
