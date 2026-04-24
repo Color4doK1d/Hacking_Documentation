@@ -19,19 +19,19 @@ Penetrate the target system and capture the flag.
 > <img width="1375" height="311" alt="NmapCapture" src="https://github.com/user-attachments/assets/35678888-032d-4ffd-9769-eea71c53860d" />
 > <em>Figure 1: Nmap Scan Output</em>
 
-- Identified Port 23 (Telnet) as open. This is more or less expected, given that this is the easiest hack that HacktheBox has to offer. While it's the only open port on this target machine, it stands out anyway for being notoriously vulnerable if poorly configured, especially as it is an older service. This makes it a high-priority target for probing.
+- Identified Port 23 (Telnet) as open. This is more or less expected, given that this is the first of HacktheBox's practicals. While it's the only open port on this target machine, it stands out anyway for being notoriously vulnerable if poorly configured, especially as it is an older service. This makes it a high-priority target for probing.
 
 ### Exploit
 
 - Connected to Port 23 on target machine with telnet command
 
-- User credentials were requested; attempted several obvious username/password combinations before I took a step back and reconsidered.
+- User credentials were requested; attempted several obvious username/password combinations before I took a step back and reconsidered. Given the level of this box and the lack of other viable attack surfaces, I probed for misconfiguration by attempting root as a username.
 
 - Used "root" login and was granted immediate root access without any follow-up prompt for a password.
 
 ### Privilege Escalation
 
-- root granted immediate root access to target machine, allowing unfettered access. While it's intentional in this case, this does showcase extraordinarily poor configuration on the part of the target machine. Good news for us.
+- root granted immediate root access to target machine, allowing unfettered access. While it's intentional in this case, this does showcase extraordinarily poor configuration on the part of the target machine.
 
 > <img width="849" height="928" alt="Telnet" src="https://github.com/user-attachments/assets/89b5db30-bb4f-4603-90a0-ff6e84bdc2c3" />
 > <em>Figure 2: Gained access to target machine through Port 23 (Telnet) with root privileges</em>
