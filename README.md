@@ -39,5 +39,13 @@
 |---|---|---|
 |1|[Baby's First Hack - Password Cracking with TryHackMe](firsthack.md)|*2026-02-16*|
 |2|[A Really Simple Example of dirb in Action](dirb.md)|*2026-03-19*|
+|3|[HTB - meow](meow.md)|*2026-04-22*|
+|4|[HTB - fawn](fawn.md)|*2026-04-22*|
+|5|[HTB - dancing](dancing.md)|*2026-04-23*|
+|6|[HTB - redeemer](redeemer.md)|*2026-04-23*|
+|7|[HTB - explosion](explosion.md)|*2026-04-23*|
+|8|[HTB - preignition](preignition.md)|*2026-04-23*|
+|9|[HTB - mongod](mongod.md)|*2026-04-23*|
+|10|[HTB - synced](synced.md)|*2026-04-23*|
 
 Last updated: April 25th, 2026
