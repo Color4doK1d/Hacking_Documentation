@@ -75,54 +75,46 @@ Capture the flag on the target machine
 
 This enumeration process required multiple attempts to get a lay of the land. In subsequent do-overs I tested each port in turn thoroughly to confirm that each port is password protected and not immediately accessible to the student. The box is designed to push the user into attempting access through the two HTTP ports running WinRM services with admin credentials.
 
-## Service Analysis - MS RPC (Port 135)
+## Service Analysis - WinRM (Ports 5985 - 5986)
 <em>Section Added 2026-04-26</em>
 
-Microsoft Remote Procedure Call (RPC) is a protocol used by Windows systems to allow programs to request services from other systems or processes over a network, typically via Port 135.
+Windows Remote Management (WinRM) is a Microsoft protocol that allows remote administration of Windows systems over HTTP (Port 5985) or HTTPS (Port 5986).
 
-MS RPC operates through an endpoint mapper on Port 135, which acts like a directory service.
+WinRM enables remote command execution and system management, typically via PowerShell.
 
-#### Process:
+It is the backbone of Powershell Remoting and is commonly used by administrators to manage systems at scale.
 
-- Client connets to Port 135
-- Endpoint Mapper provides information about available RPC services and their ports
-- The client then connects to those specific services on dynamic ports
+### Why WinRM Matters
 
-RPC underpins many core Windows functions, including authentication, service control, and system mamagement.
+WinRM is legitimate and common in Windows environments, especially in enterprise settings.
 
-### Why RPC Matters
+However, when exposed, it signals:
 
-MS RPC is normal in Windows environments, especially internally.
+- Remote administration is enabled
+- Authentication-based access is possible
+- A stable, interactive shell may be available if credentials are obtained
 
-However, its exposure can:
-
-- Reveal detailed information about the system
-- Enable enumeration of users, services, and network structure
-- Indicate a broader Windows attack surface
-
-NOTE that on its own, RPC is rarely the direct entry point. It nonetheless serves as a useful roadmap to understanding the target system environment.
+Unlike services that require exploitation, WinRM often becomes valuable once valid credentials are known.
 
 ### Common Misconfigurations & Vulnerabilities
 
-- Excessive information disclosure via enumeration
-- Weak access controls allowing unauthenticated queries
-- Exposure to untrusted networks
-- Poorly secured dependent services (e.g. SMB, WinRM)
-- Legacy or unpatched RPC-related vulnerabilities
+- Weak or reused credentials
+- Exposure to untrusted or public networks
+- Overly permissive access controls
+- Lack of network restrictions on administrative interfaces
+- Misconfigured authentication settings
 
-RPC is often less about direct exploitation and mmore about:
+Note that while WinRM is not inherently vulnerable, its security depends upon:
 
-- Gathering intelligence
-- Identifying valid users
-- Mapping services and dependencies
+- Credential strength
+- Access control
+- Network exposure
 
 ### Attack Prioritisation
 
-- If RPC is open - prioritise enumeration, not exploitation
-- Use to identify usernames; available services; system roles
-- Use gathered information to inform attacks on other services
-
-RPC is a **supporting actor**, not the primary point of attack, but it can dramatically improve the effectiveness of other attacks.
+- If WinRM open >> note it as a high-priority post-credential target
+- Prioritise obtaining valid credentials via other services (e.g. SMB, FTP)
+- If credentials are availables >> attempt authenticated access for remote command execution
 
 ## Final Thoughts
 
