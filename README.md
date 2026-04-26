@@ -35,17 +35,18 @@
 
 **SPOILERS FOR TRYHACKME AND HACKTHEBOX AHEAD - Please Read On Responsibly!**
 
+### Tier 0 Boxes
 | No. | Write-Up | Focus | Completed On |
 |---|---|---|---|
 |1|[Baby's First Hack - Password Cracking with TryHackMe](firsthack.md)|Password Hash Database Cracking|*2026-02-16*|
 |2|[A Really Simple Example of dirb in Action](dirb.md)|Dirb|*2026-03-19*|
-|3|[HTB - meow](meow.md)|Basic Enumeration & Telnet|*2026-04-22*|
-|4|[HTB - fawn](fawn.md)|FTP Exploitation|*2026-04-22*|
-|5|[HTB - dancing](dancing.md)|Windows SMB Exploitation|*2026-04-23*|
+|3|[HTB - meow](meow.md)|Telnet|*2026-04-22*|
+|4|[HTB - fawn](fawn.md)|FTP|*2026-04-22*|
+|5|[HTB - dancing](dancing.md)|SMB|*2026-04-23*|
 |6|[HTB - redeemer](redeemer.md)|Redis|*2026-04-23*|
-|7|[HTB - explosion](explosion.md)|Windows RM Vulnerability & Exploitation|*2026-04-23*|
-|8|[HTB - preignition](preignition.md)|DNS Bruteforce Enumeration & Subdomain Exploitation|*2026-04-23*|
-|9|[HTB - mongod](mongod.md)|#|*2026-04-23*|
-|10|[HTB - synced](synced.md)|#|*2026-04-23*|
+|7|[HTB - explosion](explosion.md)|WinRM|*2026-04-23*|
+|8|[HTB - preignition](preignition.md)|HTTP|*2026-04-23*|
+|9|[HTB - mongod](mongod.md)|Mongo|*2026-04-23*|
+|10|[HTB - synced](synced.md)|Rsync|*2026-04-23*|
 
 Last updated: April 25th, 2026
