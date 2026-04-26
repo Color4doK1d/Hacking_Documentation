@@ -1,4 +1,4 @@
-# Colorado Kid's Hacking Lab Documentation & Write-Ups
+# Colorado Kid's Hacking Documentation & Write-Ups
 
 *Documenting my first steps into the cybersecurity sector through TryHackMe & HacktheBox Labs, CTF Challenges & Puzzle Rooms*
 
