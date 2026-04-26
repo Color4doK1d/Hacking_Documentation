@@ -59,6 +59,64 @@ Capture the flag on the target machine
 
 This box was designed to train the user on probing web servers for weaknesses. A central pillar in any attack on a web service such as this is DNS brute-forcing, accomplished through commands like dirb or gobuster. This adds a further step in enumerating the target attack surface, but if the target system is misconfigured it means exposing a critical vulnerability. In this case, not only was an admin login subdomain exposed online, but the login credentials themselves were kept in their default - and so easily brute-forced - values.
 
+## Service Analysis - HTTP (Port 80)
+*Section Added: 2026-04-26*
+
+Hypertext Transfer Protocol (HTTP) is a stateless application-layer protocol used for transmitting web content between clients (browsers) and servers, typically over Port 80.
+
+> <img width="1060" height="592" alt="image" src="https://github.com/user-attachments/assets/a906b354-77b8-45f3-8a67-32eef720a550" />
+> <em>Figure 6: How Port 80 Works</em>
+
+HTTP follows a request-response model:
+
+- A client sends a request (e.g. GET, POST) to the server
+- The server processes it and returns a response (HTML, JSON, files, etc.)
+
+Users interact through browsers, but under the surface it's structured text flying back and forth.
+
+### Why HTTP Matters
+
+As the backbone of the internet HTTP is one of the most common and important services.
+
+Its presence indicates:
+
+- A web application or site is hosted
+- A primary user-facing interface exists
+- A large and complex attack surface is likely present
+
+Unlike many services, HTTP is rarely the system itself, but a gateway into deeper layers including:
+
+- Backend logic
+- Databases
+- Authentication Systems
+
+### Common Misconfigurations & Vulnerabilities
+
+- Directory listing enabled (exposed files and structure)
+- Default or hidden pages (admin panels, backups, test endpoints)
+- Weak auth mechanisms
+- Input handlings vulnerabilities (e.g. injection flaws)
+- Misconfigured file permissions
+- Outdatd server software or frameworks
+- Exposure of sensitive files (configs, credentials, source code)
+
+HTTP is especially prone to:
+
+- Logic flaws
+- Poort input validation
+- Accidental exposure of internal functionality
+
+### Attack Prioritisation
+
+- If Port 80 open >> prioritise enumeration of web application
+- Identify: pages & endpoints; tech in use; auth mechanisms
+
+HTTP is a **primary entry point** becaise:
+
+- It is designed to be interacted with
+- It often exposes complex functionality
+- Small mistakes can lead to full compromise
+
 ## Final Thoughts
 
 As silly as it sounds I chewed through this box because I have encountered exactly this set-up when playing hacking videogames. Identify a target website, bruteforce subdomains to reveal vulnerabilities, exploit from there. I actually found it quite satisfying to realise I already knew the attack pattern here, because I'd engaged it in endlessly in games like NITE Team 4 on Steam.
