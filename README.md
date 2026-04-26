@@ -49,4 +49,20 @@
 |9|[HTB - mongod](mongod.md)|Mongo|*2026-04-23*|
 |10|[HTB - synced](synced.md)|Rsync|*2026-04-23*|
 
-Last updated: April 25th, 2026
+## Service Analyses & Field Manuals
+
+*A collection of study notes on services identified during HacktheBox's Tier 0 boxes, including how they function and how best to enumerate and prosecute them.*
+
+| No. | Service Field Manual |
+|---|---|
+|1|[Telnet](telnet.md)|
+|2|[FTP](ftp.md)|
+|3|[SMB](smb.md)|
+|4|[Redis](redis.md)|
+|5|[RCP](rcp.md)|
+|6|[WinRM](winrm.md)|
+|7|[HTTP](http.md)|
+|8|[Mongo](mongo.db)|
+|9|[Rsync](rsync.md)|
+
+Last updated: April 26th, 2026
