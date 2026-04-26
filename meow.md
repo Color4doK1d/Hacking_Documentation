@@ -49,6 +49,44 @@ Thus, this box does not offer a challenge so much as a chance to get reps in for
 
 In that spirit, I was able to quickly identify Port 23 as running Telnet, and interface with it using telnet from my Linux VM. Attempting to log in with root as a username revealed that there was no password required, giving me full root privileges on the target machine. From there, locating and reading the flag was trivial, but I owe that at least to my own practice over the past few months with Linux Terminal on my laptop. It saved me some time having to learn on the fly from within the target box.
 
+## Service Analysis - Telnet (Port 23)
+<em>Section Added 2026-04-26</em>
+
+Telnet is a plaintext remote access protocol that allows users to log into and control systems over TCP, typically on Port 23.
+
+Telnet establishes a direct TCP connection between a client and a remote system, providing an interactive command line interface.
+
+> <img width="1118" height="497" alt="image" src="https://github.com/user-attachments/assets/b7e032a1-5fd7-40c0-b1cc-6f94d947b222" />
+> <em>Figure 4: How Port 23 Works</em>
+
+All communication, *including login credentials and commands*, is transmitted in plaintext with no encryption or integrity protection.
+
+### Why Telnet Matters
+
+Telnet is largely obsolete and has been replaced by secure alternatives such as SSH.
+
+Its presence on a modern system usually indicates:
+
+- Legacy infrastructure
+- Poor security practice
+- Intentional exposure in training environments such as this one
+
+As it lacks encryptian, any intercepted traffic can reveal credentials and session data.
+
+### Common Misconfigurations & Vulnerabilities
+
+- Transmission of credentials in plaintext (susceptible to interception)
+- Weak or default credentials
+- No account lockout or rat limiting
+- Unrestricted remote shell access after authentication
+- Exposure to untrusted or public networks
+
+### Attack Prioritisation
+
+- If Telnet exposed >> Prioritise investigation due to inherent insecurity
+- If auth. required >> focus on credential-based access (potentially weak)
+- If access obtained >> likely provides immediate command execution
+
 ## Final Thoughts
 
 Switching into tackling HacktheBox practicals marks a shift in how I have approached by cybersecurity studies to date, from passive learning to learning through active problem-solving. I know from my day job as well as my private programming studies that I learn best through being hands-on, and so I decided that tackling target machines head on offered the best path to building confidence and muscle memory. As with my programming studies, where I have learned the most by setting myself small tasks and attempting to figure out what's required for them as I go, I primarily use outside assistance when I lack the command language or syntax to execute the next step I have already identified.
