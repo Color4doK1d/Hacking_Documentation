@@ -38,16 +38,14 @@
 ### Tier 0 Boxes
 | No. | Write-Up | Focus | Completed On |
 |---|---|---|---|
-|1|[Baby's First Hack - Password Cracking with TryHackMe](firsthack.md)|Password Hash Database Cracking|*2026-02-16*|
-|2|[A Really Simple Example of dirb in Action](dirb.md)|Dirb|*2026-03-19*|
-|3|[HTB - meow](meow.md)|Telnet|*2026-04-22*|
-|4|[HTB - fawn](fawn.md)|FTP|*2026-04-22*|
-|5|[HTB - dancing](dancing.md)|SMB|*2026-04-23*|
-|6|[HTB - redeemer](redeemer.md)|Redis|*2026-04-23*|
-|7|[HTB - explosion](explosion.md)|WinRM|*2026-04-23*|
-|8|[HTB - preignition](preignition.md)|HTTP|*2026-04-23*|
-|9|[HTB - mongod](mongod.md)|Mongo|*2026-04-23*|
-|10|[HTB - synced](synced.md)|Rsync|*2026-04-23*|
+|1|[HTB - meow](meow.md)|Telnet|*2026-04-22*|
+|2|[HTB - fawn](fawn.md)|FTP|*2026-04-22*|
+|3|[HTB - dancing](dancing.md)|SMB|*2026-04-23*|
+|4|[HTB - redeemer](redeemer.md)|Redis|*2026-04-23*|
+|5|[HTB - explosion](explosion.md)|WinRM|*2026-04-23*|
+|6|[HTB - preignition](preignition.md)|HTTP|*2026-04-23*|
+|7|[HTB - mongod](mongod.md)|Mongo|*2026-04-23*|
+|8|[HTB - synced](synced.md)|Rsync|*2026-04-23*|
 
 ## Service Analyses & Field Manuals
 
@@ -65,4 +63,11 @@
 |8|[Mongo](mongo.db)|
 |9|[Rsync](rsync.md)|
 
-Last updated: April 26th, 2026
+## Archive
+
+| No. | Write-Up |
+|---|---|
+|1|[Baby's First Hack - Password Cracking with TryHackMe](firsthack.md)|
+|2|[A Really Simple Example of dirb in Action](dirb.md)|
+
+Last updated: April 27th, 2026
